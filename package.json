@@ -1,0 +1,43 @@
+{
+  "name": "@elkost/nest-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node dist/index.js",
+    "start": "nest start",
+    "build": "nest build",
+    "build:dev": "tsc --watch",
+    "docker:compose": "sh ./docker-compose.sh",
+    "prisma:generate": "npx prisma migrate dev"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Konstantin Ilyin",
+    "email": "k.r.ilyin@gmail.com"
+  },
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@nestjs/common": "^9.4.2",
+    "@nestjs/core": "^9.4.2",
+    "@prisma/client": "^4.14.1",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^9.5.0",
+    "@nestjs/schematics": "^9.2.0",
+    "@types/node": "18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.59.7",
+    "@typescript-eslint/parser": "^5.59.7",
+    "eslint": "^8.41.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prisma": "^4.14.1",
+    "typescript": "^5.0.4"
+  },
+  "imports": {
+    "#src/*": "./dist/*",
+    "#components/*": "./dist/components/*"
+  }
+}
