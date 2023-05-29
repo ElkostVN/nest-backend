@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  builder:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: builder
+      network: "host"
+    container_name: builder
+  application:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      network: "host"
+    container_name: useless-dev
+    restart: unless-stopped
+    depends_on:
+      - builder
+    network_mode: "host"
