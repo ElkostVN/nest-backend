@@ -24,6 +24,8 @@
     "@nestjs/core": "^9.4.2",
     "@nestjs/platform-fastify": "^9.4.2",
     "@prisma/client": "^4.14.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
     "envalid": "^7.3.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1"
@@ -36,12 +38,14 @@
     "@typescript-eslint/parser": "^5.59.7",
     "eslint": "^8.41.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
+    "fastify": "^4.17.0",
     "prisma": "^4.14.1",
     "typescript": "^5.0.4"
   },
   "imports": {
     "#src/*": "./dist/*",
     "#utils/*": "./dist/utils/*",
-    "#components/*": "./dist/components/*"
+    "#components/*": "./dist/components/*",
+    "#decorators/*": "./dist/decorators/*"
   }
 }
