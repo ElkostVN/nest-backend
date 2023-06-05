@@ -20,7 +20,7 @@ model Request {
     name    String
     email   String
     message String
-    comment String
+    comment String?
 
     status RequestStatus @default(Active)
 
