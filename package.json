@@ -19,10 +19,13 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "@fastify/static": "^6.10.2",
+    "@fastify/swagger": "^8.5.1",
     "@nestjs/common": "^9.4.2",
     "@nestjs/config": "^2.3.2",
     "@nestjs/core": "^9.4.2",
     "@nestjs/platform-fastify": "^9.4.2",
+    "@nestjs/swagger": "^6.3.0",
     "@prisma/client": "^4.14.1",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
